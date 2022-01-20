@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .leftside {
+  position: relative;
+  background: rgb(20, 57, 70);
+  padding: 40px;
+}
+.container .rightside {
+  position: relative;
+  background: rgb(224, 234, 238);
+  padding: 40px;
+}
+.profiletext {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 5px solid white;
+}
+.profiletext .img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profiletext .img img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+}
+.profiletext h2 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+}
+.profiletext span {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+.contactinfo {
+  padding-top: 40px;
+}
+.contactinfo .title {
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.contactinfo ul {
+  position: relative;
+}
+.contactinfo ul li {
+  cursor: pointer;
+  list-style: none;
+  margin: 10px 0px;
+  position: relative;
+}
+.contactinfo ul li .icon {
+  display: inline-block;
+  color: rgb(16, 173, 212);
+  width: 30px;
+  font-size: 18px;
+}
+.contactinfo ul li span {
+  font-weight: 300;
+  color: white;
+}
+.contactinfo.education li {
+  margin-bottom: 15px;
+}
+.contactinfo.education h6 {
+  color: rgb(103, 200, 230);
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.contactinfo.education h4 {
+  color: white;
+  font-weight: 400;
+}
+.contactinfo.education h5 {
+  font-weight: 400;
+  color: white;
+}
+.contactinfo.language .percent {
+  width: 100%;
+  background: rgb(27, 23, 41);
+  display: block;
+  position: relative;
+  height: 6px;
+  margin-top: 10px;
+}
+
+.contactinfo.language .percent div {
+  position: absolute;
+  letter-spacing: 0px;
+  top: 0%;
+  background: lightseagreen;
+  height: 100%;
+}
+.container .rightside {
+  position: relative;
+  padding: 40px;
+  background: white;
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0%;
+}
+.title2 {
+  color: rgb(6, 29, 59);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+.about .box .yearcompany {
+  min-width: 150px;
+}
+.about .box .yearcompany h5 {
+  text-transform: uppercase;
+  color: rgb(69, 85, 92);
+  font-weight: 300;
+}
+.about .box .text h4 {
+  color: rgb(14, 67, 167);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.about .box .text p {
+  color: rgb(14, 35, 54);
+  font-size: 16px;
+  font-weight: 300;
+}
+.skills .box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #7e8288;
+  font-weight: 500;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: rgb(204, 201, 201);
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: rgb(38, 116, 206);
+  height: 100%;
+}
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+
+.interest ul li {
+  color: darkblue;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 20px;
+}
+
+.interest ul li .fa {
+  color: rgb(32, 184, 235);
+  margin: 20px 20px;
+}
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .yearcompany {
+    min-height: 150px;
+    margin: 5px;
+  }
+}
